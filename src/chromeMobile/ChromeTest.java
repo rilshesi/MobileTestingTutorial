@@ -22,7 +22,7 @@ public class ChromeTest {
 		TouchAction t = new TouchAction(driver);
 		t.tap(TapOptions.tapOptions().withElement(ElementOption.element(email))).perform();
 		driver.findElementByXPath("//input[@name='email']").sendKeys("olushesi_rilwan@yahoo.com");
-		driver.findElementByXPath("//input[@name='usr_password']").sendKeys("Rodmanraylex1");
+		driver.findElementByXPath("//input[@name='usr_password']").sendKeys("Rodman");
 		driver.findElementByXPath("//button[@class='login-button login-submit']").click();
 		System.out.println(driver.getTitle());
 
